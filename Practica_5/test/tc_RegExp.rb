@@ -15,6 +15,11 @@ class TestRegExp < Test::Unit::TestCase
 
   def test_negacion
     # Comprobar negación
-    assert_equal("!a", RegExp.new("a", "").negacion.to_s)
+    assert_equal("!a", RegExp.new("a").negacion.to_s)
   end
+
+  def test_kleene
+   # Comprobar kleene
+   assert_equal("a*", RegExp.new("a").kleene.to_s)
+ end
 end

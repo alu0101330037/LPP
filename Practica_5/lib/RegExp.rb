@@ -1,5 +1,5 @@
 class RegExp
-    def initialize (x, y)
+    def initialize (x, y=nil)
         @x, @y = x, y
         @z = "#{@x} #{@y}"
     end
@@ -14,5 +14,9 @@ class RegExp
 
     def negacion
         @z = "!#{@x}#{@y}"
+    end
+
+    def kleene
+        @z = "#{@x}#{@y}*"
     end
 end
