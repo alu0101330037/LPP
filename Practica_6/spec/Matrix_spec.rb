@@ -16,5 +16,9 @@ describe Matrix do
   it "Se multiplica una matriz por un escalar y se muestra por pantalla" do
     # Define la expectativa
     expect(Matrix.new(2, 3, [1,1,1,1,1,1]).prod_esc(3)).to eq([3,3,3,3,3,3]) #matcher
-  end  
+  end
+
+  it "Traspuesta de una matriz y mostrar por pantalla" do
+    expect(Matrix.new(2, 3, [6, 5 ,4 ,3 ,2 ,1]).transp).to eq([6, 3, 5, 2, 4, 1])
+  end
 end
