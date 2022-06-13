@@ -11,4 +11,8 @@ class RegExp
     def concatenacion
         @z = "#{@x}#{@y}"
     end
+
+    def negacion
+        @z = "!#{@x}#{@y}"
+    end
 end

@@ -9,7 +9,12 @@ class TestRegExp < Test::Unit::TestCase
   end
 
   def test_concatenacion
-      # Comprobar concatenacion
+     # Comprobar concatenacion
      assert_equal("abcd", RegExp.new("ab", "cd").concatenacion.to_s)
+  end
+
+  def test_negacion
+    # Comprobar negación
+    assert_equal("!a", RegExp.new("a", "").negacion.to_s)
   end
 end
