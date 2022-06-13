@@ -15,4 +15,13 @@ class Matrix
         end
         to_s
     end
+
+    def prod_esc(numero)
+        i = 0
+        while (i < @x*@y) do
+          @z[i] *= numero
+          i += 1 
+        end
+        to_s
+    end
 end
