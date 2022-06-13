@@ -4,13 +4,15 @@ class Matrix
     end
 
     def to_s
-        # for i in 0..@x-1 do
-        #     for j in 0..@y-1 do
-        #         print "#{@z[i*@y + j]}"
-        #     end
-        #     puts "\n"
-        # end
         return @z
     end
-    
+
+    def suma (matriz)
+        i = 0
+        while (i < @x*@y) do
+          @z[i] += matriz[i]
+          i += 1 
+        end
+        to_s
+    end
 end
