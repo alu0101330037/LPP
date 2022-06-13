@@ -7,4 +7,8 @@ class RegExp
     def to_s
         return "#{@z}"
     end
+
+    def concatenacion
+        @z = "#{@x}#{@y}"
+    end
 end
